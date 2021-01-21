@@ -1,7 +1,7 @@
 program newtonraphson
     !equation::x^3-3x+1
     implicit none
-    real :: x, xold, error = 0.00001
+    real :: x, xold, error = 0.0001
     integer :: i, n
     real, external:: f, fprime
     
@@ -12,7 +12,7 @@ program newtonraphson
         x = xold - (f(xold)/fprime(xold))
         write (*, "(1x,i3,2x,f10.6)") i, x
         if (f(x) == 0.0 .or. abs(x - xold) < error) then
-            print *, "Root is ", x
+            write(*,"(1x,'Root is',1x,f10.5,1x,'(correct to 4 decimal places)')") x
             stop
         end if
         xold = x

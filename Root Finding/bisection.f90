@@ -3,7 +3,7 @@ program bisection
     implicit none
     real a, b, p
     real, external :: f
-    real, parameter :: error = 0.00001
+    real, parameter :: error = 0.0001
     integer i, n
     
     print *, "Enter a(start interval) and b(end interval) and n(iterations)"
@@ -20,7 +20,7 @@ program bisection
         p = (a + b)/2.0
         write (*, "(1x,i3,3x,1x,f9.5,3x,1x,f9.5)") i, p, f(p)
         if (f(p) == 0.0 .or. (abs((b - a)/2.0)) < error) then
-            write (*, "('The root is P=',1x,f8.4)") p
+            write(*,"(1x,'Root is',1x,f11.5,1x,'(correct to 4 decimal places)')") p
             stop
         end if
         if (f(p) > 0) then
