@@ -9,3 +9,4 @@ These codes are written in Fortran 90.
 * Root finding
     * Bisection method
     * Newton-Raphson method
+    * Secant method
