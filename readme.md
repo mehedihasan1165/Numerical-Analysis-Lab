@@ -8,5 +8,6 @@ These codes are written in Fortran 90.
 
 * Root finding
     * Bisection method
+    * Regula falsi (method of false position)
     * Newton-Raphson method
     * Secant method
