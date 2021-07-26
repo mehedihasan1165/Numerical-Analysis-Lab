@@ -11,3 +11,5 @@ These codes are written in Fortran 90.
     * Regula falsi (method of false position)
     * Newton-Raphson method
     * Secant method
+* Interpolation
+    * Lagrange interpolation
