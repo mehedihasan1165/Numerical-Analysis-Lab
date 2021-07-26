@@ -38,14 +38,14 @@ program lagrange_interpolation
     do i = 1, n
         lagrange_basis = 1
 		
-		! computing lagrange basis or l_k(x)
+	! computing lagrange basis or l_k(x)
         do j = 1, n
             if (j /= i) then
                 lagrange_basis = lagrange_basis*(x - xi(j))/(xi(i) - xi(j))
             end if
         end do
         
-		! building value term by term
+	! building value term by term
         ans = ans + (lagrange_basis*fxi(i))
     end do
     
