@@ -13,3 +13,4 @@ These codes are written in Fortran 90.
     * Secant method
 * Interpolation
     * Lagrange interpolation
+    * Newton's divided difference interpolation
