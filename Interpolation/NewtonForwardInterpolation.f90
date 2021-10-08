@@ -33,7 +33,7 @@ program newtonForward
     real, external :: uCalculation
 
     ! open and reading data from txt file
-    open (10, file='points.txt')
+    open (10, file='interpolate.txt')
     read (10, *) n, x
     allocate (xi(n), table(n, n))
     read (10, *) (xi(i), table(i, 1), i=1, n)
