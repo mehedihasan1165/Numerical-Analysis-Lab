@@ -14,3 +14,4 @@ These codes are written in Fortran 90.
 * Interpolation
     * Lagrange interpolation
     * Newton's divided difference interpolation
+    * Newton's Forward difference interpolation
