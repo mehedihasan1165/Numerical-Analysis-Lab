@@ -15,3 +15,7 @@ These codes are written in Fortran 90.
     * Lagrange interpolation
     * Newton's divided difference interpolation
     * Newton's Forward difference interpolation
+* Integration
+    * Trapezoidal rule
+    * Simpson's 1/3 rule
+    * Simpson's 3/8 rule
