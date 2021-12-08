@@ -18,7 +18,7 @@ program simpson_three_eighth
         if (mod(i, 3) .eq. 0) then
             tempsum = tempsum + 2*f(a + i*h)
         else
-            tempsum = tempsum + 2*f(a + i*h)
+            tempsum = tempsum + 3*f(a + i*h)
         end if
     end do
     ans = (3*h/8)*(tempsum)
